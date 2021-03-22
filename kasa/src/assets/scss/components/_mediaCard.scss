@@ -1,0 +1,59 @@
+.mediaCard{
+
+    width: 350px;
+    margin: 20px auto;
+
+    @media (max-width: $breakpoint-minMobile) {
+        width: 300px;
+        margin: 10px auto;
+    }
+
+    &__image{
+        & img{
+            max-width: 350px;
+            max-height: 300px;
+            min-width: 350px;
+            min-height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+
+            @media (max-width: $breakpoint-minMobile) {
+                max-width: 300px;
+                max-height: 195px;
+                min-width: 300px;
+                min-height: 195px;
+            }
+        }
+    }
+
+    &__desc{
+        display: flex;
+        justify-content: flex-end;
+        color: $color-secondaryEmpty-text;
+        max-width: inherit;
+
+        &__name{
+            font-size: 24px;
+            margin-right: auto;
+            overflow: hidden; 
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            @media (max-width: $breakpoint-minMobile) {
+                font-size: 14px;
+            }
+        }
+
+        &__number{
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 20px;
+            white-space: nowrap;
+
+            @media (max-width: $breakpoint-minMobile) {
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.photographerNumbers{
+    @media (max-width: $breakpoint-minMobile) {
+        display: none;
+    }
+
+    background-color: $color-secondaryFilled-background;
+    color: $color-secondaryFilled-text;
+    font-size: 24px;
+    font-weight: 500;
+    width: 380px;
+
+    display: flex;
+    justify-content: space-around;
+
+    padding: 20px 30px;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    position: fixed;
+    bottom: 0%;
+    left: calc(50% + 200px);
+}

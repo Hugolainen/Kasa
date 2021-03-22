@@ -1,0 +1,32 @@
+.header{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 25px;
+
+    &__logo{
+        max-width: 200px;
+        max-height: 50px;
+
+        @media (max-width: $breakpoint-minMobile) {
+            max-width: 150px;
+            max-height: 37.5px;
+        }
+    }
+
+    &__nav{
+        padding-top: 12px;
+        padding-left: 100px;
+
+        @media (max-width: $breakpoint-minMobile) {
+            padding-left:0;
+            margin: 0 40px;
+        }
+    }
+
+
+    @media (max-width: $breakpoint-minMobile) {
+        display: block;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+}
