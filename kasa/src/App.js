@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Banner from './elements/Banner/Banner';
 import FooterBar from './layouts/Footer/FooterBar';
 import NavigationBar from './layouts/Header/NavigationBar'
 
@@ -8,9 +9,9 @@ class App extends Component{
       <div className="App">
         <NavigationBar />
   
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
+        <Banner page={"home"} />
+
+      
         
   
         <FooterBar />

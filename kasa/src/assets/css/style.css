@@ -92,6 +92,22 @@ a {
   font-size: 0;
 }
 
+.banner {
+  border-radius: 25px;
+  text-align: center;
+  background-position: center;
+  margin-bottom: 2rem;
+}
+.banner--home {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/homeBackground.png");
+  border-radius: 25px;
+  line-height: 220px;
+}
+.banner--about {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/aboutBackground.png");
+  height: 220px;
+}
+
 .photographerCard {
   max-width: 400px;
   width: fit-content;
