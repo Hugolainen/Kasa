@@ -2,14 +2,14 @@
     padding: 10px 0;
     margin: 30px 10px;
 
-    background-color: $color-secondaryLightFill-background;
+    //background-color: $color-secondaryLightFill-background;
     border-radius: 5px;
 
     display:flex;
     justify-content: space-between;
 
     @media (max-width: $breakpoint-minMobile) {
-        background-color: $color-primaryVoid-background;
+        //background-color: $color-primaryVoid-background;
         margin: 0;
     }
     
@@ -34,7 +34,7 @@
         }
 
         & h1{
-            color:$color-primaryVoid-text;
+            //color:$color-primaryVoid-text;
             font-size: 64px;
 
             @media (max-width: $breakpoint-minMobile) {
@@ -44,9 +44,9 @@
 
         & p{
             font-size: 18px;
-            color: $color-secondaryLightFill-text;
+            //color: $color-secondaryLightFill-text;
             margin-bottom: 20px;
-            color: $color-photographPersonalSentence;
+            //color: $color-photographPersonalSentence;
 
             @media (max-width: $breakpoint-minMobile) {
                 font-size: 13px;
@@ -67,7 +67,7 @@
 
     &__button{
         background-color: $color-primaryFilled-background;
-        color: $color-primaryFilled-text;
+        //color: $color-primaryFilled-text;
         border-radius: 5px;
 
         font-size: 20px;
@@ -84,7 +84,7 @@
 
         &:hover{
             background-color: $color-secondaryFilled-background;
-            color: $color-secondaryFilled-text;
+            //color: $color-secondaryFilled-text;
         }
 
         

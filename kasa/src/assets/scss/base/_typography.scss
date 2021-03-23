@@ -1,52 +1,57 @@
-/* dm-sans-regular - latin */
-/*
+/* Montserrat-Regular */
 @font-face {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../public/font/dm-sans-v6-latin-regular.eot'); /* IE9 Compat Modes */
-//   src: local(''),
-//         url('../public/font/dm-sans-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-//         url('../public/font/dm-sans-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-  //       url('../public/font/dm-sans-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
-  //       url('../public/font/dm-sans-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
- //        url('../public/font/dm-sans-v6-latin-regular.svg#DMSans') format('svg'); /* Legacy iOS */
- // }
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.otf') format("opentype"); 
+}
 
-  
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    src: url('../fonts/Montserrat-Medium.otf') format("opentype"); 
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    src: url('../fonts/Montserrat-SemiBold.otf') format("opentype"); 
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: lighter;
+    src: url('../fonts/Montserrat-Light.otf') format("opentype"); 
+}
+
 *{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Montserrat';
 }
 
 h1{
-    color: $color-secondaryEmpty-text;
-    font-size: 36px;
+    font-size: bold;
+    font-size: 48px;
+    color: $color-primary;
 
     @media (max-width: $breakpoint-minMobile) {
-        font-size: 14px;
+        font-size: 24px;
     }
 }
 
 h2{
-    color: $color-primaryVoid-text;
     font-size: 36px;
-}
+    color: $color-secondary;
 
-strong{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    color: $color-secondaryEmpty-text;
-}
-
-em{
-    font-style: normal;
-    font-size: 9px;
-    color: $color-secondaryLightFill-text;
+    @media (max-width: $breakpoint-minMobile) {
+        font-size: 18px;
+    }
 }
 
 p{
-    font-size: 10px;
+    font-size: 18px;
+    color: $color-secondary;
+
+    @media (max-width: $breakpoint-minMobile) {
+        font-size: 12px;
+    }
 }
 
 a{

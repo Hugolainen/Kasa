@@ -4,18 +4,23 @@
     margin-top: 25px;
 
     &__logo{
-        max-width: 200px;
-        max-height: 50px;
+        & img{
+            max-width: 210px;
+            max-height: 68px;
+        }
 
         @media (max-width: $breakpoint-minMobile) {
-            max-width: 150px;
-            max-height: 37.5px;
+            max-width: 210px;
+            max-height: 68px;
         }
     }
 
     &__nav{
         padding-top: 12px;
         padding-left: 100px;
+        list-style: none;
+        display: inline;
+        
 
         @media (max-width: $breakpoint-minMobile) {
             padding-left:0;

@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    color: $color-secondaryEmpty-text;
+    //color: $color-secondaryEmpty-text;
 
     & li{
         border: 0.5px solid #C4C4C4;
@@ -21,6 +21,6 @@
 }
 
 .tagActive{
-    color: $color-primaryFilled-text;
-    background-color: $color-primaryFilled-background;
+    //color: $color-primaryFilled-text;
+    //background-color: $color-primaryFilled-background;
 }
