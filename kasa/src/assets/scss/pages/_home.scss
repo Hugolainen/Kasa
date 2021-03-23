@@ -1,1 +1,16 @@
+.appartmentGallery{
+    background-color: $color-tertiary;
+    border-radius: 25px;
+    padding: 3rem 3rem 0 3rem;
 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint-minMobile) {
+        flex-direction: column;
+        background-color: $color-primary;
+        padding: 0;
+        justify-content:flex-start;
+    }
+}

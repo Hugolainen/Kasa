@@ -1,6 +1,5 @@
 .banner{
     border-radius: 25px;
-    background-position: center;
     margin-bottom: 2rem;
 
     height: 220px;
@@ -15,10 +14,12 @@
     }
 
     &--home{
-        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/homeBackground.png');
+        background-size: cover;
+        background-image:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/homeBackground.png');
     }
 
     &--about{
-        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/aboutBackground.png');
+        background-size: cover;
+        background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/aboutBackground.png');
     }
 }

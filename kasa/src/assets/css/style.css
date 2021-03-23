@@ -100,7 +100,6 @@ a {
 
 .banner {
   border-radius: 25px;
-  background-position: center;
   margin-bottom: 2rem;
   height: 220px;
   display: flex;
@@ -114,10 +113,50 @@ a {
   }
 }
 .banner--home {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/homeBackground.png");
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/homeBackground.png");
 }
 .banner--about {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/aboutBackground.png");
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/aboutBackground.png");
+}
+
+.accommodationCard {
+  position: relative;
+  margin-bottom: 3rem;
+}
+.accommodationCard__image {
+  border-radius: 25px;
+  height: 340px;
+  width: 340px;
+  object-fit: cover;
+}
+@media (max-width: 425px) {
+  .accommodationCard__image {
+    height: 255px;
+    width: 100%;
+  }
+}
+.accommodationCard:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 60%, black);
+  border-radius: 25px;
+}
+@media (max-width: 425px) {
+  .accommodationCard {
+    margin-bottom: 1.5rem;
+  }
+}
+.accommodationCard__title {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
 }
 
 .photographerCard {
@@ -328,6 +367,23 @@ a {
 .footer__logo img {
   max-width: 122px;
   max-height: 40px;
+}
+
+.appartmentGallery {
+  background-color: #f7f7f7;
+  border-radius: 25px;
+  padding: 3rem 3rem 0 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 425px) {
+  .appartmentGallery {
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 0;
+    justify-content: flex-start;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
