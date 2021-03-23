@@ -5,10 +5,10 @@ class NavigationBar extends Component {
 
     render() {
       return (
-        <header class="header">
-            <div class="header__logo"> <img src={logo} className="App-logo" alt="logo" /> </div>
-            <ul class="header__nav">
-                <li>
+        <header className="header">
+            <div className="header__logo"> <img src={logo} alt="logo" /> </div>
+            <ul className="header__nav">
+                <li className="active">
                     Home
                 </li>
                 <li>

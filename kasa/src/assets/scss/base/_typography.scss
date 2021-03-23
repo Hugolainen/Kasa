@@ -59,6 +59,17 @@ a{
     color: inherit;
 }
 
+.textWhite{
+    color:$color-primary;
+}
+
+.textBigger{
+    font-size: 24px;
+    @media (max-width: $breakpoint-minMobile) {
+        font-size: 12px;
+    }
+}
+
 .invisible{
     font-size: 0;
 }

@@ -1,7 +1,8 @@
 .header{
     display: flex;
-    margin-left: 50px;
-    margin-top: 25px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
 
     &__logo{
         & img{
@@ -10,8 +11,8 @@
         }
 
         @media (max-width: $breakpoint-minMobile) {
-            max-width: 210px;
-            max-height: 68px;
+            max-width: 145px;
+            max-height: 47px;
         }
     }
 
@@ -19,19 +20,24 @@
         padding-top: 12px;
         padding-left: 100px;
         list-style: none;
-        display: inline;
+        display: flex;
+        color: $color-secondary;
+        font-size: 24px;
         
+        & li{
+            margin-left: 5rem;
+
+            @media (max-width: $breakpoint-minMobile) {
+                margin-left: 2rem;
+            }
+        }
 
         @media (max-width: $breakpoint-minMobile) {
-            padding-left:0;
-            margin: 0 40px;
+            font-size: 12px;
         }
     }
+}
 
-
-    @media (max-width: $breakpoint-minMobile) {
-        display: block;
-        margin-top: 40px;
-        margin-left: 20px;
-    }
+.active{
+    text-decoration: underline;
 }

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import FooterBar from './layouts/Footer/FooterBar';
 import NavigationBar from './layouts/Header/NavigationBar'
 
 class App extends Component{
@@ -7,15 +8,12 @@ class App extends Component{
       <div className="App">
         <NavigationBar />
   
-        <body>
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-        </body>
+        
   
-        <footer>
-  
-        </footer>
+        <FooterBar />
       </div>
     );
   }
