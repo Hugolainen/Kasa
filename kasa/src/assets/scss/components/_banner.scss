@@ -1,17 +1,24 @@
 .banner{
     border-radius: 25px;
-    text-align: center;
     background-position: center;
     margin-bottom: 2rem;
 
+    height: 220px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: $breakpoint-minMobile) {
+        height: 110px;
+        padding: 2rem;
+    }
+
     &--home{
         background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/homeBackground.png');
-        border-radius: 25px;
-        line-height: 220px;
     }
 
     &--about{
         background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/aboutBackground.png');
-        height: 220px;
     }
 }

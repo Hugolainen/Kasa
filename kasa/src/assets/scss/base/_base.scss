@@ -9,8 +9,12 @@
 body {
     box-sizing: border-box;
     width: 100vw;
-    min-width: 320px;
+    min-width: 335px;
     max-width: 1240px;
     margin: auto;
     margin-top:2rem;
+
+    @media (max-width: $breakpoint-minMobile) {
+        max-width: 335px;
+    }
 }

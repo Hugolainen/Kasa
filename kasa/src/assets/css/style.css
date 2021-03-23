@@ -9,10 +9,15 @@
 body {
   box-sizing: border-box;
   width: 100vw;
-  min-width: 320px;
+  min-width: 335px;
   max-width: 1240px;
   margin: auto;
   margin-top: 2rem;
+}
+@media (max-width: 425px) {
+  body {
+    max-width: 335px;
+  }
 }
 
 /* Montserrat-Regular */
@@ -43,6 +48,7 @@ h1 {
   font-size: bold;
   font-size: 48px;
   color: #ffffff;
+  word-wrap: break-word;
 }
 @media (max-width: 425px) {
   h1 {
@@ -94,18 +100,24 @@ a {
 
 .banner {
   border-radius: 25px;
-  text-align: center;
   background-position: center;
   margin-bottom: 2rem;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 425px) {
+  .banner {
+    height: 110px;
+    padding: 2rem;
+  }
 }
 .banner--home {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/homeBackground.png");
-  border-radius: 25px;
-  line-height: 220px;
 }
 .banner--about {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/aboutBackground.png");
-  height: 220px;
 }
 
 .photographerCard {
@@ -268,14 +280,13 @@ a {
   max-height: 68px;
 }
 @media (max-width: 425px) {
-  .header__logo {
+  .header__logo img {
     max-width: 145px;
     max-height: 47px;
   }
 }
 .header__nav {
   padding-top: 12px;
-  padding-left: 100px;
   list-style: none;
   display: flex;
   color: #ff6060;
@@ -291,7 +302,13 @@ a {
 }
 @media (max-width: 425px) {
   .header__nav {
+    text-transform: uppercase;
     font-size: 12px;
+  }
+}
+@media (max-width: 425px) {
+  .header {
+    margin-bottom: 1rem;
   }
 }
 

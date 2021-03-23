@@ -8,17 +8,16 @@
         & img{
             max-width: 210px;
             max-height: 68px;
-        }
 
-        @media (max-width: $breakpoint-minMobile) {
-            max-width: 145px;
-            max-height: 47px;
+            @media (max-width: $breakpoint-minMobile) {
+                max-width: 145px;
+                max-height: 47px;
+            }
         }
     }
 
     &__nav{
         padding-top: 12px;
-        padding-left: 100px;
         list-style: none;
         display: flex;
         color: $color-secondary;
@@ -33,8 +32,13 @@
         }
 
         @media (max-width: $breakpoint-minMobile) {
+            text-transform: uppercase;
             font-size: 12px;
         }
+    }
+
+    @media (max-width: $breakpoint-minMobile) {
+        margin-bottom: 1rem;
     }
 }
 
