@@ -7,7 +7,7 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-        <NavigationBar />
+        <NavigationBar page={"home"}/>
   
         <Banner page={"home"} />
 
