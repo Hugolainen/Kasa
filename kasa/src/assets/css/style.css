@@ -199,6 +199,9 @@ a {
   padding: 1rem;
   border-radius: 5px;
 }
+.dropdown--thinner {
+  width: 580px;
+}
 
 .tag {
   border-radius: 10px;
@@ -299,6 +302,11 @@ a {
 .taglist {
   list-style: none;
   display: flex;
+}
+
+.DropdownMenus {
+  display: flex;
+  justify-content: space-around;
 }
 
 .notFound {

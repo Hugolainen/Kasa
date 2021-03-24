@@ -13,7 +13,6 @@ class Dropdown extends Component {
 
     showContent(event) {
         event.preventDefault();
-        console.log(this.state.showContent);
 
         if(this.state.showContent){
             this.setState({
@@ -28,23 +27,37 @@ class Dropdown extends Component {
       }
 
     render() {
-        var classExt="";
+        var textExt="";
+        var dropboxExt="dropdown";
         if(this.props.page === "about"){
-            classExt += "textBigger";
+            textExt += "textBigger";
+        }
+        if(this.props.page === "accomodation"){
+            dropboxExt += " dropdown--thinner";
+        }
+
+        const dropdownContent = [];
+        if(typeof(this.props.content) == "string"){
+            dropdownContent.push(<p key={this.props.content} className={textExt}> {this.props.content} </p>);
+        }
+        else{
+            this.props.content.forEach(element => {
+                dropdownContent.push(<p key={element} className={textExt}> {element} </p>);
+            });
         }
 
         return (
-            <section className="dropdown">
+            <section className={dropboxExt}>
                 <div className="dropdown__title">
-                    <h3 className={classExt} type="button" onClick={this.showContent}> 
+                    <h3 className={textExt} type="button" onClick={this.showContent}> 
                         {this.props.title} 
                         {
                             this.state.showContent
                             ? (
-                                <i class="fas fa-chevron-up"></i>
+                                <i className="fas fa-chevron-up"></i>
                             )
                             : (
-                                <i class="fas fa-chevron-down"></i>
+                                <i className="fas fa-chevron-down"></i>
                             )
                         }
                         
@@ -54,7 +67,7 @@ class Dropdown extends Component {
                     this.state.showContent
                     ? (
                         <div className="dropdown__content">
-                            <p className={classExt}> {this.props.content} </p>
+                            {dropdownContent}
                         </div>
                     )
                     : (
