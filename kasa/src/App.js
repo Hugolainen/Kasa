@@ -3,6 +3,7 @@ import FooterBar from './layouts/Footer/FooterBar';
 import NavigationBar from './layouts/Header/NavigationBar'
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
+import NotFound from './pages/NotFound/NotFound';
 
 class App extends Component{
   render(){
@@ -12,8 +13,9 @@ class App extends Component{
   
         <Home />
         <About />
+        <NotFound />
         
-  
+
         <FooterBar />
       </div>
     );
