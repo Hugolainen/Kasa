@@ -1,0 +1,30 @@
+.dropdown{
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 1022px;
+
+    @media (max-width: 1022px) {
+        width: 100%;
+    }
+
+    @media (max-width: $breakpoint-minMobile) {
+        margin-bottom: 1rem;;
+    }
+
+
+    &__title{
+        background-color: $color-secondary;
+        padding: 1rem;
+        border-radius: 5px;
+        
+        & i{
+            float: right;
+        }
+    }
+
+    &__content{
+        background-color: $color-tertiary;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+}

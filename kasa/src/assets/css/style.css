@@ -66,6 +66,16 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 18px;
+  color: #ffffff;
+}
+@media (max-width: 425px) {
+  h3 {
+    font-size: 13px;
+  }
+}
+
 p {
   font-size: 18px;
   color: #ff6060;
@@ -90,7 +100,7 @@ a {
 }
 @media (max-width: 425px) {
   .textBigger {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 
@@ -157,6 +167,36 @@ a {
   position: absolute;
   bottom: 2rem;
   left: 2rem;
+  max-width: 300px;
+}
+
+.dropdown {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 1022px;
+}
+@media (max-width: 1022px) {
+  .dropdown {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .dropdown {
+    margin-bottom: 1rem;
+  }
+}
+.dropdown__title {
+  background-color: #ff6060;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.dropdown__title i {
+  float: right;
+}
+.dropdown__content {
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
 .photographerCard {
