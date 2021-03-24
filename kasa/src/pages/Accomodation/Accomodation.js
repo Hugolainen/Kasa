@@ -14,7 +14,7 @@ class Accommodation extends Component {
 
         return (
             <div>
-                <Carousel pictures={data[0].pictures}/>
+                <Carousel pictureList={data[1].pictures}/>
                 
                 <ul className="taglist">
                     {tagList}

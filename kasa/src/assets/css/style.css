@@ -221,6 +221,58 @@ a {
   }
 }
 
+.carousel {
+  position: relative;
+  color: #ffffff;
+  font-size: 80px;
+}
+.carousel--singlePicture {
+  display: none;
+}
+.carousel__image {
+  height: 415px;
+  width: 100%;
+  background-color: red;
+  border-radius: 25px;
+  object-fit: cover;
+}
+@media (max-width: 425px) {
+  .carousel__image {
+    height: 225px;
+    border-radius: 10px;
+    width: 335px;
+  }
+}
+.carousel__next {
+  position: absolute;
+  top: calc(50% - 40px);
+  right: 2rem;
+  cursor: pointer;
+}
+@media (max-width: 425px) {
+  .carousel__next {
+    top: calc(50% - 10px);
+    right: 1rem;
+  }
+}
+.carousel__previous {
+  position: absolute;
+  top: calc(50% - 40px);
+  left: 2rem;
+  cursor: pointer;
+}
+@media (max-width: 425px) {
+  .carousel__previous {
+    top: calc(50% - 10px);
+    left: 1rem;
+  }
+}
+@media (max-width: 425px) {
+  .carousel {
+    font-size: 20px;
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;
