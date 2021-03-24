@@ -200,23 +200,22 @@ a {
   border-radius: 5px;
 }
 
-.tagList {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.tag {
+  border-radius: 10px;
+  background-color: #ff6060;
+  font-size: 14px;
+  width: 115px;
 }
-.tagList li {
-  border: 0.5px solid #C4C4C4;
-  border-radius: 11px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
+.tag__content {
+  padding: 0.5rem;
   text-align: center;
-  cursor: pointer;
-  padding: 2px 5px;
-  margin: 3px;
+}
+@media (max-width: 425px) {
+  .tag {
+    border-radius: 5px;
+    font-size: 10px;
+    width: 84px;
+  }
 }
 
 .header {
@@ -295,6 +294,11 @@ a {
     padding: 0;
     justify-content: flex-start;
   }
+}
+
+.taglist {
+  list-style: none;
+  display: flex;
 }
 
 .notFound {

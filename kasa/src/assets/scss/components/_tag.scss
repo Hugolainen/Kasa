@@ -1,0 +1,17 @@
+.tag{
+    border-radius: 10px;
+    background-color: $color-secondary;
+    font-size: 14px;
+    width: 115px;
+
+    &__content{
+        padding: .5rem;
+        text-align: center;
+    }
+
+    @media (max-width: $breakpoint-minMobile) {
+        border-radius: 5px;
+        font-size: 10px;
+        width: 84px;
+    }
+}
