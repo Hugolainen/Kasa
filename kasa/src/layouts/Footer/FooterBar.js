@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import logo from '../../assets/images/logoWhite.png';
 
 class FooterBar extends Component {
-
     render() {
       return (
         <footer className="footer">

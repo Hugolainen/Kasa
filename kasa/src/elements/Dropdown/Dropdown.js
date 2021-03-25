@@ -11,6 +11,7 @@ class Dropdown extends Component {
         this.showContent = this.showContent.bind(this);
     }
 
+    // Manage the click event on the dropdown title bar (extend, retract)
     showContent(event) {
         event.preventDefault();
 
@@ -24,9 +25,10 @@ class Dropdown extends Component {
                 showContent: true,
             });
         }
-      }
+    }
 
     render() {
+        // Manage the classes based on the webpage (about != accomodation)
         var textExt="";
         var dropboxExt="dropdown";
         if(this.props.page === "about"){
@@ -36,6 +38,8 @@ class Dropdown extends Component {
             dropboxExt += " dropdown--thinner";
         }
 
+        // Generates the content of the dropdown based on the input type 
+        // (string formating for the 'list' data input)
         const dropdownContent = [];
         if(typeof(this.props.content) == "string"){
             dropdownContent.push(<p key={this.props.content} className={textExt}> {this.props.content} </p>);

@@ -9,6 +9,7 @@ import Rating from '../../elements/Rating/Rating';
 
 class Accommodation extends Component {
     
+    // Get the index of the accomodation in the data.json file based on its id
     getIndex(id, data){
         for(let i=0; i<data.length; i++){
             if(id === data[i].id){
@@ -20,15 +21,16 @@ class Accommodation extends Component {
     }
     
     render() {
+        // Gets the accomodation
         const id=this.props.match.params.id;
         const index = this.getIndex(id, data);
         const accomodation = data[index];
 
+        // Generates the tag list
         const tagList = [];
         accomodation.tags.forEach((element)=>{
             tagList.push(<Tag key={element} tagContent={element}/>)
         });
-
 
         return (
             <div>

@@ -4,9 +4,7 @@ import { NavLink } from 'react-router-dom'
 import logo from '../../assets/images/logo.png';
 
 class NavigationBar extends Component {
-
     render() {
-
       return (
         <header className="header">
             <div className="header__logo"> <img src={logo} alt="logo" /> </div>

@@ -3,7 +3,8 @@ import React, { Component } from 'react'
 class Rating extends Component {
 
     render() {
-
+        // Generate a list of 5 stars based on the rating of the accomodation
+        // Their difference is class based
         const ratingString = []; 
         for(let i=0; i<this.props.rating; i++){
             ratingString.push(<i key={"Star_" + i} className="fas fa-star rating__starFull"></i>) ;

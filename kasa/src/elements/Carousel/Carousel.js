@@ -14,10 +14,12 @@ class Carousel extends Component {
         this.updatePicture = this.updatePicture.bind(this);
     }
 
+    // Get the picture path based on the index
     updatePicture(){
         return this.props.pictureList[this.state.carouselIndex];
     }
 
+    // Roll index forward
     nextPicture(event) {
         event.preventDefault();
 
@@ -34,6 +36,7 @@ class Carousel extends Component {
         });       
     }
 
+    // Roll index backward
     previousPicture(event) {
         event.preventDefault();
         var newIndex;
@@ -49,10 +52,8 @@ class Carousel extends Component {
         });
     }
 
-    
-
     render() {
-
+        // Manage the display of arrows based on the number of pictures of the acommodation
         var singlePictureClass = "";
         if(this.props.pictureList.length === 1){
             singlePictureClass = "carousel--singlePicture";

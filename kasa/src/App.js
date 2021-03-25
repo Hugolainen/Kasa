@@ -1,3 +1,4 @@
+// Libraries import
 import React, {Component} from 'react';
 import {
   HashRouter as Router,
@@ -5,6 +6,7 @@ import {
   Switch,
 } from "react-router-dom";
 
+// Components import
 import FooterBar from './layouts/Footer/FooterBar';
 import NavigationBar from './layouts/Header/NavigationBar'
 import Home from './pages/Home/Home';
@@ -12,15 +14,9 @@ import About from './pages/About/About';
 import NotFound from './pages/NotFound/NotFound';
 import Accommodation from './pages/Accomodation/Accomodation';
 
-/*
-<Accommodation />
-*/
-
+// Main
 class App extends Component{
   render(){
-
-    
-
     return (
       <Router>
         <div className="App">

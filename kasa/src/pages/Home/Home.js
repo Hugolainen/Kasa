@@ -5,6 +5,7 @@ import data from '../../assets/data.json'
 
 class Home extends Component {
     render() {
+        // Generation of the accomodation card gallery 
         const list = [];
         data.forEach((element)=>{
             list.push(<AccommodationCard key={element.id} id={element.id} cover={element.cover} title={element.title}/>)

@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "sass": "sass --watch ./src/assets/scss/main.scss:./src/assets/css/style.css",
-    "prefix": "postcss ./src/assets/css/style.css --use autoprefixer -d ./src/assets/css/prefixed/"
+    "prefix": "postcss ./src/assets/css/style.css --use autoprefixer -d ./src/assets/css_prefixed/"
   },
   "eslintConfig": {
     "extends": [
