@@ -3,8 +3,6 @@ import {
   HashRouter as Router,
   Route,
   Switch,
-  Link,
-  Redirect
 } from "react-router-dom";
 
 import FooterBar from './layouts/Footer/FooterBar';
@@ -31,6 +29,7 @@ class App extends Component{
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
+            <Route path="/accomodation/:id" component={Accommodation} />
             <Route exact component={NotFound} />
           </Switch>
 

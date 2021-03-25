@@ -7,7 +7,7 @@ class Home extends Component {
     render() {
         const list = [];
         data.forEach((element)=>{
-            list.push(<AccommodationCard key={element.id} cover={element.cover} title={element.title}/>)
+            list.push(<AccommodationCard key={element.id} id={element.id} cover={element.cover} title={element.title}/>)
         });
 
         return (

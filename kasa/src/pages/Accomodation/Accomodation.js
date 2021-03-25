@@ -1,39 +1,55 @@
 import React, { Component } from 'react'
-import Tag from '../../elements/Tag/Tag';
 import data from '../../assets/data.json'
+
+import Tag from '../../elements/Tag/Tag';
 import Carousel from '../../elements/Carousel/Carousel';
 import Dropdown from '../../elements/Dropdown/Dropdown';
 import Host from '../../elements/Host/Host';
 import Rating from '../../elements/Rating/Rating';
 
 class Accommodation extends Component {
+    
+    getIndex(id, data){
+        for(let i=0; i<data.length; i++){
+            if(id === data[i].id){
+                return i;
+            }
+        }
+        console.log("No match found");
+        return 0;
+    }
+    
     render() {
+        const id=this.props.match.params.id;
+        const index = this.getIndex(id, data);
+        const accomodation = data[index];
+
         const tagList = [];
-        data[9].tags.forEach((element)=>{
+        accomodation.tags.forEach((element)=>{
             tagList.push(<Tag key={element} tagContent={element}/>)
         });
 
 
         return (
             <div>
-                <Carousel pictureList={data[1].pictures}/>
+                <Carousel pictureList={accomodation.pictures}/>
                 <div className="accomodationInfo">
                     <div className="accomodationInfo__desc1">
-                        <h2> {data[0].title} </h2>
-                        <p className="accomodationInfo__desc1__midItem"> {data[0].Location} </p>
+                        <h2> {accomodation.title} </h2>
+                        <p className="accomodationInfo__desc1__midItem"> {accomodation.Location} </p>
                         <ul className="taglist">
                             {tagList}
                         </ul>
                     </div>
                     <div className="accomodationInfo__desc2">
-                        <Host name={data[0].host.name} picture={data[0].host.picture}/>
-                        <Rating rating={data[1].rating}/>
+                        <Host name={accomodation.host.name} picture={accomodation.host.picture}/>
+                        <Rating rating={accomodation.rating}/>
                     </div>
                 </div>
 
                 <div className="DropdownMenus">
-                    <Dropdown page="accomodation" title="Description" content={data[0].description}/>
-                    <Dropdown page="accomodation" title="Equipements" content={data[0].Amenities}/>
+                    <Dropdown page="accomodation" title="Description" content={accomodation.description}/>
+                    <Dropdown page="accomodation" title="Equipements" content={accomodation.Amenities}/>
                 </div>
             </div>
         );
