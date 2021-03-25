@@ -5,5 +5,48 @@
 
 .DropdownMenus{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint-minMobile) {
+        flex-direction: column;
+        margin-bottom: -1rem;
+    }
+}
+
+.accomodationInfo{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+
+    &__desc1{
+        display: flex;
+        flex-direction: column;
+
+        &__midItem{
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+
+            @media (max-width: $breakpoint-minMobile) {
+                margin-top: 0.1rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+
+    &__desc2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media (max-width: $breakpoint-minMobile) {
+            flex-direction:row-reverse;
+            align-items: center;
+            margin: 0.5rem 0;
+        }
+    }
+
+    @media (max-width: $breakpoint-minMobile) {
+        flex-direction: column;
+        margin: 0.5rem 0;
+    }
 }

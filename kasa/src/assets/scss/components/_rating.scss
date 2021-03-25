@@ -1,0 +1,24 @@
+.rating{
+    font-size: 25px;
+
+    &__starFull{
+        color:$color-secondary;
+        margin: .2rem;
+        @media (max-width: $breakpoint-minMobile) {
+            margin: 0.1rem;
+        }
+    }
+
+    &__starEmpty{
+        color:darken($color-tertiary, 15%);
+        margin: .2rem;
+
+        @media (max-width: $breakpoint-minMobile) {
+            margin: 0.1rem;
+        }
+    }
+
+    @media (max-width: $breakpoint-minMobile) {
+        font-size: 15px;
+    }
+}

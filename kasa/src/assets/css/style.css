@@ -169,6 +169,11 @@ a {
   left: 2rem;
   max-width: 300px;
 }
+@media (max-width: 425px) {
+  .accommodationCard__title {
+    max-width: 280px;
+  }
+}
 
 .dropdown {
   margin: 0 auto;
@@ -201,23 +206,35 @@ a {
 }
 .dropdown--thinner {
   width: 580px;
+  margin: 0;
+}
+@media (max-width: 425px) {
+  .dropdown--thinner {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
 
 .tag {
   border-radius: 10px;
   background-color: #ff6060;
-  font-size: 14px;
-  width: 115px;
+  margin-right: 1rem;
 }
 .tag__content {
-  padding: 0.5rem;
+  font-size: 14px;
+  padding: 0.5rem 2rem;
   text-align: center;
+}
+@media (max-width: 425px) {
+  .tag__content {
+    padding: 0.3rem 1rem;
+    font-size: 10px;
+  }
 }
 @media (max-width: 425px) {
   .tag {
     border-radius: 5px;
-    font-size: 10px;
-    width: 84px;
+    margin-right: 0.5rem;
   }
 }
 
@@ -270,6 +287,61 @@ a {
 @media (max-width: 425px) {
   .carousel {
     font-size: 20px;
+  }
+}
+
+.host {
+  display: flex;
+  align-items: center;
+}
+.host__name {
+  margin-right: 1rem;
+  width: 100px;
+  text-align: right;
+}
+@media (max-width: 425px) {
+  .host__name {
+    width: 50px;
+    margin-right: 0.5rem;
+  }
+}
+.host__image {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media (max-width: 425px) {
+  .host__image {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.rating {
+  font-size: 25px;
+}
+.rating__starFull {
+  color: #ff6060;
+  margin: 0.2rem;
+}
+@media (max-width: 425px) {
+  .rating__starFull {
+    margin: 0.1rem;
+  }
+}
+.rating__starEmpty {
+  color: #d1d1d1;
+  margin: 0.2rem;
+}
+@media (max-width: 425px) {
+  .rating__starEmpty {
+    margin: 0.1rem;
+  }
+}
+@media (max-width: 425px) {
+  .rating {
+    font-size: 15px;
   }
 }
 
@@ -358,7 +430,51 @@ a {
 
 .DropdownMenus {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+@media (max-width: 425px) {
+  .DropdownMenus {
+    flex-direction: column;
+    margin-bottom: -1rem;
+  }
+}
+
+.accomodationInfo {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.accomodationInfo__desc1 {
+  display: flex;
+  flex-direction: column;
+}
+.accomodationInfo__desc1__midItem {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 425px) {
+  .accomodationInfo__desc1__midItem {
+    margin-top: 0.1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+.accomodationInfo__desc2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 425px) {
+  .accomodationInfo__desc2 {
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0.5rem 0;
+  }
+}
+@media (max-width: 425px) {
+  .accomodationInfo {
+    flex-direction: column;
+    margin: 0.5rem 0;
+  }
 }
 
 .notFound {

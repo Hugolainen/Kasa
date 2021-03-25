@@ -33,5 +33,10 @@
         bottom: 2rem;
         left: 2rem;
         max-width: 300px;
+
+        @media (max-width: $breakpoint-minMobile) {
+            max-width: 280px;
+
+        }
     }
 }

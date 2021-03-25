@@ -1,17 +1,21 @@
 .tag{
     border-radius: 10px;
     background-color: $color-secondary;
-    font-size: 14px;
-    width: 115px;
+    margin-right: 1rem;
 
     &__content{
-        padding: .5rem;
+        font-size: 14px;
+        padding: .5rem 2rem;
         text-align: center;
+
+        @media (max-width: $breakpoint-minMobile) {
+            padding: .3rem 1rem;
+            font-size: 10px;
+        }
     }
 
     @media (max-width: $breakpoint-minMobile) {
         border-radius: 5px;
-        font-size: 10px;
-        width: 84px;
+        margin-right: 0.5rem;
     }
 }

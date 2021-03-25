@@ -31,5 +31,11 @@
 
     &--thinner{
         width: 580px;
+        margin: 0;
+
+        @media (max-width: $breakpoint-minMobile) {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
     }
 }
