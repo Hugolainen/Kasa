@@ -1,13 +1,14 @@
 .taglist{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .DropdownMenus{
     display: flex;
     justify-content: space-between;
 
-    @media (max-width: $breakpoint-minMobile) {
+    @media (max-width: $breakpoint-minTablet) {
         flex-direction: column;
         margin-bottom: -1rem;
     }

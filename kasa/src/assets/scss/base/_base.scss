@@ -17,4 +17,8 @@ body {
     @media (max-width: $breakpoint-minMobile) {
         max-width: 335px;
     }
+
+    @media (max-width: $breakpoint-minTablet) {
+        max-width: 728px;
+    } 
 }

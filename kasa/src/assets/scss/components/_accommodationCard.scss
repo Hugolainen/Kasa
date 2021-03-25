@@ -8,6 +8,12 @@
         width: 340px;
         object-fit: cover;
 
+        @media (max-width: $breakpoint-minTablet) {
+            border-radius: 15px;
+            height: 335px;
+            width: 335px;
+        }
+
         @media (max-width: $breakpoint-minMobile) {
             height: 255px;
             width: 100%;
@@ -22,6 +28,10 @@
         background-image: linear-gradient(
             rgba(0,0,0,0) 60%, rgba(0,0,0,1) );
         border-radius: 25px;
+    }
+
+    @media (max-width: $breakpoint-minTablet) {
+        margin-bottom: 1rem;
     }
 
     @media (max-width: $breakpoint-minMobile) {

@@ -33,7 +33,7 @@
         width: 580px;
         margin: 0;
 
-        @media (max-width: $breakpoint-minMobile) {
+        @media (max-width: $breakpoint-minTablet) {
             width: 100%;
             margin-bottom: 1rem;
         }

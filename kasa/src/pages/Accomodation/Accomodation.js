@@ -9,7 +9,7 @@ import Rating from '../../elements/Rating/Rating';
 class Accommodation extends Component {
     render() {
         const tagList = [];
-        data[0].tags.forEach((element)=>{
+        data[9].tags.forEach((element)=>{
             tagList.push(<Tag key={element} tagContent={element}/>)
         });
 
