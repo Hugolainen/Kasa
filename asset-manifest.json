@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Kasa/static/css/main.a0536cac.chunk.css",
+    "main.js": "/Kasa/static/js/main.cabd4002.chunk.js",
+    "main.js.map": "/Kasa/static/js/main.cabd4002.chunk.js.map",
+    "runtime-main.js": "/Kasa/static/js/runtime-main.02801d84.js",
+    "runtime-main.js.map": "/Kasa/static/js/runtime-main.02801d84.js.map",
+    "static/js/2.0c1cbcee.chunk.js": "/Kasa/static/js/2.0c1cbcee.chunk.js",
+    "static/js/2.0c1cbcee.chunk.js.map": "/Kasa/static/js/2.0c1cbcee.chunk.js.map",
+    "index.html": "/Kasa/index.html",
+    "static/css/main.a0536cac.chunk.css.map": "/Kasa/static/css/main.a0536cac.chunk.css.map",
+    "static/js/2.0c1cbcee.chunk.js.LICENSE.txt": "/Kasa/static/js/2.0c1cbcee.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/Kasa/static/media/homeBackground.024f945a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.02801d84.js",
+    "static/js/2.0c1cbcee.chunk.js",
+    "static/css/main.a0536cac.chunk.css",
+    "static/js/main.cabd4002.chunk.js"
+  ]
+}
